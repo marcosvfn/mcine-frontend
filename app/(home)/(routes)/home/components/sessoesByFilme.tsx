@@ -2,11 +2,10 @@
 "use client";
 
 import { SessoesByFilme } from "@/actions/tenant/sessoes/api";
-import QuadroPage from "@/app/(dashboard)/[idCinema]/(routes)/quadro/components/quadroPage";
 import HeadingCine from "@/components/base/headingCine";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cn } from "@/lib/utils";
-import { CalendarCheck, Popcorn } from "lucide-react";
+import { Popcorn } from "lucide-react";
 import DataPage from "./dataPage";
 import { useEffect, useState } from "react";
 

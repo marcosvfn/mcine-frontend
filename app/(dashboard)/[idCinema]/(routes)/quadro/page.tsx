@@ -1,8 +1,5 @@
 import GetTenantAPIServer from "@/actions/tenant/TenantApiServer";
 import CantViewAsRoot from "@/components/base/cantViewAsRoot";
-import { currencyFormatter } from "@/lib/utils";
-import { format } from "date-fns";
-import { SessoesColumns } from "../sessoes/components/columns";
 import { SalasActions } from "@/actions/tenant/salas/api";
 import NoData from "@/components/base/noData";
 import QuadroClient from "./components/quadroClient";
@@ -31,7 +28,7 @@ export default async function QuadroHorariosPage({
 
   return (
     <div className="flex-col">
-      <div className="flex-1 space-y-4 p-8 pt-6">
+      <div className="flex-1 space-y-4 p-8 pt-6 max-w-[82vw]">
         <QuadroClient data={sessoesBySala} />
       </div>
     </div>

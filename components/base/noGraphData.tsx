@@ -1,7 +1,6 @@
 "use client";
 
 import { AlertCircle } from "lucide-react";
-import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 
 export default function NoGraphData({ text }: { text?: string }) {

@@ -1,9 +1,7 @@
 "use client";
 
-import { CinemaActions } from "@/actions/root/cinema/api";
 import { AvaliacoesActions } from "@/actions/tenant/avaliacoes/api";
 import { cn } from "@/lib/utils";
-import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 

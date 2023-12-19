@@ -6,7 +6,7 @@ import {
   FilmesActions,
   SessoesDisponiveis,
 } from "@/actions/root/filmes/api";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import FilmesCarousel from "./filmesCarousel";
 import { Calendar, Popcorn, Store } from "lucide-react";
 import { horizontalVariant } from "@/components/animate/Variants";
@@ -26,7 +26,6 @@ import {
 } from "@/actions/tenant/sessoes/api";
 import { Button } from "@/components/ui/button";
 import { useInView } from "framer-motion";
-import scrollTo from "react-scroll";
 
 interface HomeClientProps {
   slides: FilmeModel[];

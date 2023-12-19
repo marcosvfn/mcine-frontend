@@ -3,7 +3,6 @@ import { FilmesActions } from "@/actions/root/filmes/api";
 import GetTenantAPIServer from "@/actions/tenant/TenantApiServer";
 import { SessoesActions } from "@/actions/tenant/sessoes/api";
 import NewTicketClient from "./components/newTicketClient";
-import { AvaliacoesActions } from "@/actions/tenant/avaliacoes/api";
 
 interface NovoTicketPageProps {
   params: {

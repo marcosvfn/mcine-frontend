@@ -2,8 +2,6 @@
 
 import { ColumnDef } from "@tanstack/react-table";
 import CellAction from "./cellActions";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import ButtonUserCinemaNav from "./buttonUserCinemaNav";
 
 export type CinemaColumns = {

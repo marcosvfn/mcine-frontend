@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import Navbar from "./(routes)/home/components/navbar";
-import Footer from "@/components/base/footer";
 import FooterCinema from "@/components/base/footerCinema";
 
 export default function Layout({ children }: { children: ReactNode }) {

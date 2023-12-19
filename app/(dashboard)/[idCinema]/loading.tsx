@@ -1,4 +1,3 @@
-import LoadingComponent from "@/components/base/loadingComponent";
 import { PulseLoader } from "react-spinners";
 
 const Loading = () => {

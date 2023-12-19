@@ -1,5 +1,4 @@
 import GetRootAPIServer from "@/actions/root/RootApiServer";
-import { CinemaActions } from "@/actions/root/cinema/api";
 import { UsuarioActions } from "@/actions/root/usuario/api";
 import NoPermission from "@/components/base/noPermission";
 import { format } from "date-fns";

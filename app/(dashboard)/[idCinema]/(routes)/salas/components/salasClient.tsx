@@ -1,6 +1,6 @@
 "use client";
 
-import { Calendar, Plus, Popcorn, Projector } from "lucide-react";
+import { Calendar, Plus, Projector } from "lucide-react";
 import { Button } from "../../../../../../components/ui/button";
 import { useParams, useRouter } from "next/navigation";
 import { SalasColumns, columns } from "./columns";

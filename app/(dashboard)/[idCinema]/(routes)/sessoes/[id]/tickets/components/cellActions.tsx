@@ -14,7 +14,6 @@ import toast from "react-hot-toast";
 import { useParams, useRouter } from "next/navigation";
 import { useState } from "react";
 import AlertModal from "@/components/modals/alertModal";
-import { SalasActions } from "@/actions/tenant/salas/api";
 import { useCurrentCinema } from "@/app/hooks/useCurrentCinema";
 import { TicketsColumns } from "./columns";
 import { TicketsActions } from "@/actions/tenant/tickets/api";

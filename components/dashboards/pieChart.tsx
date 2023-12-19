@@ -36,7 +36,7 @@ export default function VisualizacoesPieChart(props: VisualizacoesPieProps) {
   };
 
   return (
-    <div className="w-full h-full flex items-center justify-star flex-col p-5 bg-card rounded-xl shadow-lg">
+    <div className="w-full h-full min-h-[300px] flex items-center justify-star flex-col p-5 bg-card rounded-xl shadow-lg">
       <h5 className="text-muted-foreground font-xs w-full font-semibold text-start tracking-tight">
         {title}
       </h5>

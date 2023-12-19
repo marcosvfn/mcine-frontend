@@ -4,7 +4,7 @@ import NoData from "@/components/base/noData";
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cn } from "@/lib/utils";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 interface QuadroPageProps {
   data: SessoesFilmesInfo[];

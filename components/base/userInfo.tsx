@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, LogOutIcon, User, User2 } from "lucide-react";
+import { Home, LogOutIcon, User } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
   DropdownMenu,
@@ -13,7 +13,6 @@ import {
 } from "../ui/dropdown-menu";
 import { Avatar, AvatarImage } from "../ui/avatar";
 import { signOut, useSession } from "next-auth/react";
-import ThemeSwitcher from "./themeSwitcher";
 import { useRouter } from "next/navigation";
 
 export default function UserInfoDropdown() {

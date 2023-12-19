@@ -23,8 +23,6 @@ import {
 import LoadingButton from "@/components/custom/LoadingButton";
 import {
   SessaoCombinedType,
-  SessaoInfoNomes,
-  SessaoModel,
   SessoesActions,
 } from "@/actions/tenant/sessoes/api";
 import {

@@ -14,7 +14,6 @@ import toast from "react-hot-toast";
 import { useParams, useRouter } from "next/navigation";
 import { useState } from "react";
 import AlertModal from "@/components/modals/alertModal";
-import { CinemaActions } from "@/actions/root/cinema/api";
 import { UsuarioActions } from "@/actions/root/usuario/api";
 import { UsuarioColumns } from "./columns";
 import { useCurrentCinema } from "@/app/hooks/useCurrentCinema";

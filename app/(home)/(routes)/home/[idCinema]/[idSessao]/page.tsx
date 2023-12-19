@@ -1,8 +1,5 @@
-import { QuadroDeHorariosType, SalasActions } from "@/actions/tenant/salas/api";
-import NewTicketClientCinema from "./components/newTicketClientCinema";
+import { SalasActions } from "@/actions/tenant/salas/api";
 import GetTenantAPIServer from "@/actions/tenant/TenantApiServer";
-import { AssentoActions } from "@/actions/tenant/assentos/api";
-import GetRootAPIServer from "@/actions/root/RootApiServer";
 import NewTicketLoginForm from "./components/newTicketLoginForm";
 
 export default async function BuyTicketPage({

@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { Separator } from "@radix-ui/react-separator";
-import { Home, LogInIcon, Menu, Package, Popcorn, Ticket } from "lucide-react";
+import { Home, LogInIcon, Menu, Popcorn, Ticket } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";

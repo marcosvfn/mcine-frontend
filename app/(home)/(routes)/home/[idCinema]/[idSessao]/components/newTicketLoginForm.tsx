@@ -19,9 +19,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import LoadingButton from "@/components/custom/LoadingButton";
 import { useParams, useRouter } from "next/navigation";
-import Link from "next/link";
 import { Popcorn } from "lucide-react";
-import Image from "next/image";
 import Loading from "@/app/(home)/loading";
 
 interface NewTicketClientCinemaProps {

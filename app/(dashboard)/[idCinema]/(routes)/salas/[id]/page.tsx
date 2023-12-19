@@ -1,4 +1,3 @@
-import GetRootAPIServer from "@/actions/root/RootApiServer";
 import { SalasActions } from "@/actions/tenant/salas/api";
 import SalaForm from "../components/salasForm";
 import GetTenantAPIServer from "@/actions/tenant/TenantApiServer";

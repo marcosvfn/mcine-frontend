@@ -13,7 +13,6 @@ import {
   FormLabel,
 } from "@/components/ui/form";
 import { useState } from "react";
-import axios from "axios";
 import { useCinemaModal } from "@/app/hooks/useCinemaModal";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";

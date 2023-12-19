@@ -8,17 +8,15 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import { Copy, Edit, MoreHorizontal, Trash } from "lucide-react";
+import { MoreHorizontal, Trash } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import toast from "react-hot-toast";
 import { useParams, useRouter } from "next/navigation";
 import { useState } from "react";
 import AlertModal from "@/components/modals/alertModal";
 import { UserTicketsColumns } from "./columns";
-import { SalasActions } from "@/actions/tenant/salas/api";
-import { useCurrentCinema } from "@/app/hooks/useCurrentCinema";
 import { TicketsActions } from "@/actions/tenant/tickets/api";
-import { format, parse } from "date-fns";
+import { parse } from "date-fns";
 
 interface CellActionProps {
   data: UserTicketsColumns;

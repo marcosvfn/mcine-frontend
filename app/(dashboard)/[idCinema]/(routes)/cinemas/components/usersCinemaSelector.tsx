@@ -1,11 +1,8 @@
 "use client";
 
 import { UsuarioCinemaModel } from "@/actions/root/cinema/api";
-import { DataTable } from "@/components/tables/dataTable";
 import { Badge } from "@/components/ui/badge";
 import { ColumnDef } from "@tanstack/react-table";
-import { UseFormReturn } from "react-hook-form";
-import { CinemaFormValues } from "./cinemaForm";
 import UserCinemaCellActions from "./userCinemaCellActions";
 import { useCinemaUserList } from "@/app/hooks/useCinemaUserList";
 import { useEffect } from "react";

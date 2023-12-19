@@ -41,15 +41,15 @@ export default function DataPage(props: dataPageProps) {
         value={defaultActiveTab}
         onValueChange={(value) => setDefaultActiveTab(value)}
       >
-        <TabsList
-          className={cn(
-            `bg-muted flex justify-between rounded-xl overflow-auto`
-          )}
-        >
-          {!data.length && !tabsValues.length && (
-            <NoData text="Não há sessões com esse filme para esse período" />
-          )}
-          {tabsValues.length > 0 && (
+        {!data.length && !tabsValues.length && (
+          <NoData text="Não há sessões com esse filme para esse período" />
+        )}
+        {tabsValues.length > 0 && (
+          <TabsList
+            className={cn(
+              `bg-muted flex justify-between rounded-xl overflow-auto`
+            )}
+          >
             <>
               {tabsValues.map((tab, index) => (
                 <TabsTrigger
@@ -63,8 +63,8 @@ export default function DataPage(props: dataPageProps) {
                 </TabsTrigger>
               ))}
             </>
-          )}
-        </TabsList>
+          </TabsList>
+        )}
         {data.length > 0 &&
           data.map((item, index) => (
             <TabsContent
@@ -96,6 +96,7 @@ export default function DataPage(props: dataPageProps) {
                       <FilmeSessaoCard
                         idSessao={sessao.id}
                         data={formattedSessao}
+                        isSessao
                       />
                       <Separator className="my-3 dark:bg-zinc-600" />
                     </div>

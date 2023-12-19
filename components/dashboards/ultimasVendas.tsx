@@ -1,6 +1,6 @@
 import { UltimasVendas } from "@/actions/root/cinema/api";
 import { Avatar, AvatarImage } from "../ui/avatar";
-import { formatDistance, subHours } from "date-fns";
+import { addHours, formatDistance, subHours } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import { ChevronsUp } from "lucide-react";
 import { currencyFormatter } from "@/lib/utils";
@@ -51,7 +51,7 @@ export default function UltimasVendas(props: UltimasVendasProps) {
             <span className="ml-auto flex flex-col text-end gap-2">
               <h5 className="text-muted-foreground text-xs">
                 {formatDistance(
-                  subHours(new Date(item.datareserva), 3),
+                  addHours(new Date(item.datareserva), 9),
                   new Date(),
                   {
                     addSuffix: true,

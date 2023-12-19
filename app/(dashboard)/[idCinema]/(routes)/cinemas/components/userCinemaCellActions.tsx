@@ -29,7 +29,6 @@ export default function UserCinemaCellActions(props: CellActionProps) {
 
   const onDelete = async () => {
     try {
-      console.log(data.id);
       userCinemaList.deleteUser(data.id);
       router.refresh();
       toast.success("Usuário removido! Salve as alterações para guardar.");

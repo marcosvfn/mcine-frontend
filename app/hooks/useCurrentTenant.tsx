@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
-import { destroyCookie, setCookie } from "nookies";
+import { setCookie } from "nookies";
 
 interface TenantId {
   tenantId: string | undefined;

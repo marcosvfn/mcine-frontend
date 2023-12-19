@@ -26,7 +26,6 @@ import { useCinemaModal } from "@/app/hooks/useCinemaModal";
 import { Button } from "../ui/button";
 import { useCurrentCinema } from "@/app/hooks/useCurrentCinema";
 import useTenantId from "@/app/hooks/useCurrentTenant";
-import usePreventHydration from "@/app/hooks/usePreventHidration";
 
 type PopOverTriggerProps = React.ComponentPropsWithoutRef<
   typeof PopoverTrigger

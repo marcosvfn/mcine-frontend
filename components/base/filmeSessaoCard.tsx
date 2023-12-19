@@ -18,13 +18,15 @@ import LoadingButton from "../custom/LoadingButton";
 interface FilmeCardProps {
   data: SessoesFilmesInfo;
   idSessao: string;
+  isSessao?: boolean;
 }
 
 export default function FilmeSessaoCard(props: FilmeCardProps) {
-  const { data, idSessao } = props;
+  const { data, idSessao, isSessao } = props;
 
   const router = useRouter();
   const params = useParams();
+
   const isCinema = !params.idCinema;
   const assentosModal = useAssentoModal();
   const createTicket = useCreateTicket();
@@ -46,7 +48,8 @@ export default function FilmeSessaoCard(props: FilmeCardProps) {
   return (
     <div
       className={cn(
-        "rounded-xl bg-card shadow-lg p-3 h-auto w-full flex flex-col sm:flex-row"
+        "rounded-xl bg-card shadow-lg p-3 h-auto w-full flex flex-col sm:flex-row",
+        isSessao && "bg-muted"
       )}
     >
       <div className="flex">

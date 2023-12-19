@@ -44,11 +44,14 @@ export default async function AdminDashBoard({
   const topVisualizacoesByCinemaAll =
     await FilmesActions.getFilmesMaisVisualizados(apiServer);
 
+  const topVisualizacoesByCinemaSemana =
+    await FilmesActions.getFilmesMaisVisualizadosSemana(apiServer);
+
   const { dataSet1: topFilmesAll, dataSet2: topCinemasAll } =
     generatePizzaGraphData(topVisualizacoesByCinemaAll);
 
   const { dataSet1: topFilmesSemana, dataSet2: topCinemasSemana } =
-    generatePizzaGraphData(topVisualizacoesByCinemaAll);
+    generatePizzaGraphData(topVisualizacoesByCinemaSemana);
 
   const totalArrecadoByFilme = await FilmesActions.getTotalArrecadadoByFilme(
     apiServer
@@ -81,7 +84,7 @@ export default async function AdminDashBoard({
   const ultimasVendas = await CinemaActions.getUltimasVendas(apiServer);
 
   return (
-    <div className="p-8 w-full">
+    <div className="p-8 md:p-4 w-full">
       <Heading
         title="Visão Geral"
         description="Resumo global de faturamentos e desempenho dos cinemas cadastrados"

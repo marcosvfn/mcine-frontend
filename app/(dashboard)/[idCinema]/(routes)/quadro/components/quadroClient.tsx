@@ -19,7 +19,6 @@ import { ptBR } from "date-fns/locale";
 import { useState } from "react";
 import { DateRange } from "react-day-picker";
 import HeadingCine from "@/components/base/headingCine";
-import { useParams } from "next/navigation";
 import {
   Select,
   SelectContent,
@@ -82,7 +81,9 @@ export default function QuadroClient(props: QuadroClientProps) {
 
   return (
     <>
-      <div className={cn("flex items-center justify-between")}>
+      <div
+        className={cn("flex items-center justify-between w-full overflow-auto")}
+      >
         <span className="flex items-center gap-3">
           <CalendarCheck size={isCinema ? 35 : 40} />
           {isCinema && (
@@ -172,15 +173,21 @@ export default function QuadroClient(props: QuadroClientProps) {
                 </SelectValue>
               </SelectTrigger>
               <SelectContent>
-                {[1, 2, 3, 4, 5, 99].map((aval) => (
+                {[1, 2, 3, 4, 5, 99].map((aval, index) => (
                   <>
                     {aval !== 99 && (
-                      <SelectItem key={`aval${aval}`} value={String(aval)}>
+                      <SelectItem
+                        key={`aval${aval}--${index}`}
+                        value={String(aval)}
+                      >
                         <Rating idFilme="" initialNota={aval} readonly />
                       </SelectItem>
                     )}
                     {aval === 99 && (
-                      <SelectItem key={`aval${aval}`} value={String(aval)}>
+                      <SelectItem
+                        key={`${aval}=--${index}`}
+                        value={String(aval)}
+                      >
                         Todas as notas
                       </SelectItem>
                     )}
@@ -200,11 +207,13 @@ export default function QuadroClient(props: QuadroClientProps) {
                 <SelectValue placeholder="Selecione o horário..." />
               </SelectTrigger>
               <SelectContent>
-                {["16:00", "18:00", "20:00", "22:00", "Todos"].map((hora) => (
-                  <SelectItem key={`hora${hora}`} value={hora}>
-                    {hora !== "Todos" ? `${hora}h` : hora}
-                  </SelectItem>
-                ))}
+                {["16:00", "18:00", "20:00", "22:00", "Todos"].map(
+                  (hora, index) => (
+                    <SelectItem key={`${index}..hora${hora}`} value={hora}>
+                      {hora !== "Todos" ? `${hora}h` : hora}
+                    </SelectItem>
+                  )
+                )}
               </SelectContent>
             </Select>
           </span>
@@ -236,7 +245,7 @@ export default function QuadroClient(props: QuadroClientProps) {
               key={`${index}.-${tab}`}
               value={tab}
               className={cn(
-                "w-full flex gap-x-2 rounded-xl data-[state=active]:bg-primary data-[state=active]:text-white"
+                "w-full flex gap-x-2 rounded-xl data-[state=active]:bg-primary overflow-auto data-[state=active]:text-white"
               )}
             >
               {tab}

@@ -35,7 +35,6 @@ import { format } from "date-fns";
 import { Calendar } from "@/components/ui/calendar";
 import { ptBR } from "date-fns/locale";
 import { Checkbox } from "@/components/ui/checkbox";
-import { CommandInput } from "@/components/ui/command";
 
 const FormSchema = z.object({
   nome: z.string().min(1, "Insira o nome do usuário"),

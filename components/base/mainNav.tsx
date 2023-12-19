@@ -12,7 +12,6 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
-import { SheetClose } from "../ui/sheet";
 
 export function MainNav({
   className,

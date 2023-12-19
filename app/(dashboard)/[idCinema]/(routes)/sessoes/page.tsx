@@ -1,7 +1,6 @@
 import { format } from "date-fns";
 import GetTenantAPIServer from "@/actions/tenant/TenantApiServer";
 import CantViewAsRoot from "@/components/base/cantViewAsRoot";
-import SalasClient from "./components/sessoesClient";
 import { SessoesActions } from "@/actions/tenant/sessoes/api";
 import { currencyFormatter } from "@/lib/utils";
 import { SessoesColumns } from "./components/columns";

@@ -1,5 +1,4 @@
 import { SalasActions } from "@/actions/tenant/salas/api";
-import SalaForm from "../components/sessaoForm";
 import GetTenantAPIServer from "@/actions/tenant/TenantApiServer";
 import { CheckUserAdmin } from "@/actions/checkUserAdmin";
 import { authOptions } from "@/lib/authOptions";

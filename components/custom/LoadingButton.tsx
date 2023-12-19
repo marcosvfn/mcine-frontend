@@ -1,7 +1,5 @@
-import { ClipLoader } from "react-spinners";
 import { Button, ButtonProps } from "../ui/button";
 import { Loader2 } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 export default function LoadingButton(
   props: ButtonProps & { isLoading: boolean }

@@ -11,7 +11,6 @@ import { cn } from "@/lib/utils";
 import { Link as LinkScroll } from "react-scroll";
 import { opacityVariant } from "@/components/animate/Variants";
 import { motion } from "framer-motion";
-import LoadingComponent from "@/components/base/loadingComponent";
 import Link from "next/link";
 import { Carousel } from "antd";
 import { CarouselRef } from "antd/es/carousel";

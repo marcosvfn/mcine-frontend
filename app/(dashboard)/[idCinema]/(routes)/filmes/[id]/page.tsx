@@ -1,5 +1,4 @@
 import GetRootAPIServer from "@/actions/root/RootApiServer";
-import { UsuarioActions } from "@/actions/root/usuario/api";
 import { FilmesActions } from "@/actions/root/filmes/api";
 import FilmeForm from "../components/filmesForm";
 import { CheckUserAdmin } from "@/actions/checkUserAdmin";

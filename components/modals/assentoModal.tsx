@@ -7,13 +7,12 @@ import {
   DialogHeader,
   DialogTitle,
 } from "../ui/dialog";
-import { useState } from "react";
 import toast from "react-hot-toast";
 import { Badge } from "../ui/badge";
 import { Separator } from "../ui/separator";
 import { Button } from "../ui/button";
 import { PiArmchairFill } from "react-icons/pi";
-import { GiTheater, GiTheaterCurtains } from "react-icons/gi";
+import { GiTheater } from "react-icons/gi";
 
 export default function AssentoModal() {
   const assentoModal = useAssentoModal();

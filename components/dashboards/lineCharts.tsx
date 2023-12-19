@@ -76,7 +76,7 @@ export default function LineChart(props: LineChartsProps) {
           margin={{
             top: 20,
             right: onlyOneCinema ? 20 : 20,
-            bottom: 20,
+            bottom: onlyOneCinema ? 20 : 70,
             left: 70,
           }}
           xScale={{ type: "point" }}
@@ -84,7 +84,6 @@ export default function LineChart(props: LineChartsProps) {
             type: "linear",
             min: "auto",
             max: "auto",
-            stacked: true,
             reverse: false,
           }}
           yFormat={(val) => currencyFormatter.format(Number(val))}

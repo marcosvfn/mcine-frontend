@@ -4,17 +4,9 @@ import { authOptions } from "@/lib/authOptions";
 import Navbar from "@/components/base/navbar";
 import { Info } from "lucide-react";
 import { getServerSession } from "next-auth";
-import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { ReactNode } from "react";
 
-export default async function DashboardLayout({
-  children,
-  params,
-}: {
-  children: ReactNode;
-  params: { storeId: string };
-}) {
+export default async function DashboardLayout() {
   const session = await getServerSession(authOptions);
 
   const userId = session?.user?.id;
