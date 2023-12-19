@@ -17,7 +17,7 @@ A aplicação está dividida em duas frentes principais:
 		* zod Validator
 		* Nivo Charts
   
-# Painel Administrativo
+### Painel Administrativo
 	- Conta com dois tipos de cinemas (tenants):
 		* Tenant Padrão:
 			- Cadastro de salas e sessões
