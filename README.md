@@ -10,12 +10,12 @@ A aplicação está dividida em duas frentes principais:
 	- Interface para usuários consumidores, onde podem navegar pelos cinemas e sessões, adquirir, listar e excluir tickets;
  
 - Stacks Utilizadas: 
-		* NextJS 14
-		* TailwindCSS
-		* shadcn UI
-		* Axios
-		* zod Validator
-		* Nivo Charts
+	* NextJS 14
+	* TailwindCSS
+	* shadcn UI
+	* Axios
+	* zod Validator
+	* Nivo Charts
   
 ### Painel Administrativo
 	- Conta com dois tipos de cinemas (tenants):
@@ -25,3 +25,23 @@ A aplicação está dividida em duas frentes principais:
 			- Gestão de faturamento, desempenho e tickets exclusivo do cinema
 			- Usuário Adminisitrador: Pode cadastrar, excluir e editar todas as funcionalidades do cinema;
 			- Usuário Padrão: Pode vender tickets, porém somente visualizar salas e sessões;
+		* Tenant Raíz:
+			- Único na aplicação;
+			- Utilizado para gerenciar outros cinemas, filmes e usuários
+			- Gestão global de faturamento, desempenho e tickets dos cinemas.
+			- Usuário Administrador: Pode cadastrar, excluir e editar cinemas, filmes e usuários;
+			- Usuário Padrão: Pode visualizar informações de gestão e cadastros;
+## Interface para consumidores
+	* Single page flow
+		1. Seleciona-se o filme
+		2. Seleciona-se o cinema
+		3. Seleciona-se a sessão
+		4. Informa credenciais de compra
+		5. Seleciona-se os assentos
+  		6. Efetua compra do ticket
+			
+	* Área para acessar os tickets adquiridos com CPF
+		- Seleciona-se o cinema que deseja ver os tickets
+		- Loga-se com o CPF
+		- Se existe histórico, lista os tickets
+		- Pode excluir tickets de sessões futuras (reembolso)
