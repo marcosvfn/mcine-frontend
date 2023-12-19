@@ -44,6 +44,14 @@ A aplicação está dividida em duas frentes principais: um painel administrativ
 		- Se existe histórico, lista os tickets
 		- Pode excluir tickets de sessões futuras (reembolso)
 
+## Credenciais
+	* Administrador
+ 		- Email: admin@mcine.com
+   		- Senha: 12345678
+	* Padrão
+ 		- Email: padrao@mcine.com
+   		- Senha: 12345678
+     
 # Inicialização
 *  Fazer download do respositório
 *  Abrir com o terminal
