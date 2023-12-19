@@ -54,20 +54,20 @@ A aplicação está dividida em duas frentes principais: um painel administrativ
     ```
     
 *  Certifique de ter todas as 5 variáveis de ambiente no arquivo .env:
-	# Root tenant identifier
-	NEXT_APP_ROOT_TENANT_ID="root"
+	*  Root tenant identifier
+		- NEXT_APP_ROOT_TENANT_ID="root"
 
-	# BACKEND HOST URL
-	NEXT_APP_BASE_API_URL="http://localhost:8000"
+  	* BACKEND HOST URL
+		- NEXT_APP_BASE_API_URL="http://localhost:8000"
 
-	# AUTHENTICATION REDIRECT URL (Same as the app runs)
-	NEXTAUTH_URL="http://localhost:3000"
+  	* AUTHENTICATION REDIRECT URL (Same as the app runs)
+		- NEXTAUTH_URL="http://localhost:3000"
 
-	#  Authentication Sign Secrets
-	NEXTAUTH_SECRET="T7wkgDNnHcw1stDmduSdSRfvIiw7B6O0EP8VK6tRwEk="
+  	*  Authentication Sign Secrets
+		- NEXTAUTH_SECRET="T7wkgDNnHcw1stDmduSdSRfvIiw7B6O0EP8VK6tRwEk="
 
-	# Cloudinary Image Repository name
-	NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=dpmbuqjqj
+  	* Cloudinary Image Repository name
+		- NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=dpmbuqjqj
 	
 *  Buildar o projeto para versão otimizada
   
