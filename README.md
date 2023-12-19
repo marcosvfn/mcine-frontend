@@ -46,7 +46,7 @@ A aplicação está dividida em duas frentes principais:
 		- Se existe histórico, lista os tickets
 		- Pode excluir tickets de sessões futuras (reembolso)
 
-## Inicialização
+# Inicialização
 	- Fazer download do respositório
 	- Abrir com o terminal
 	- Instalar as dependências
