@@ -45,3 +45,31 @@ A aplicação está dividida em duas frentes principais:
 		- Loga-se com o CPF
 		- Se existe histórico, lista os tickets
 		- Pode excluir tickets de sessões futuras (reembolso)
+
+## Inicialização
+	- Fazer download do respositório
+	- Abrir com o terminal
+	- Instalar as dependências
+		$ yarn install
+	
+	- Certifique de ter todas as variáveis de ambiente no arquivo .env:
+		# Root tenant identifier
+		NEXT_APP_ROOT_TENANT_ID="root"
+
+		# BACKEND HOST URL
+		NEXT_APP_BASE_API_URL="http://localhost:8000"
+
+		# AUTHENTICATION REDIRECT URL (Same as the app runs)
+		NEXTAUTH_URL="http://localhost:3000"
+
+		#  Authentication Sign Secrets
+		NEXTAUTH_SECRET="T7wkgDNnHcw1stDmduSdSRfvIiw7B6O0EP8VK6tRwEk="
+
+		# Cloudinary Image Repository name
+		NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=dpmbuqjqj
+	
+	- Buildar o projeto (Aplicação NextJS é bastante otimizada em produção)
+		$ yarn build
+	
+	- Inicializar o projeto (porta 3000)
+		$ yarn start
