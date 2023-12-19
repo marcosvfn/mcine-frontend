@@ -47,7 +47,7 @@ export default function DataPage(props: dataPageProps) {
         {tabsValues.length > 0 && (
           <TabsList
             className={cn(
-              `bg-muted flex justify-between rounded-xl overflow-auto`
+              `bg-muted flex justify-start rounded-xl overflow-auto`
             )}
           >
             <>

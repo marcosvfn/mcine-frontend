@@ -65,6 +65,7 @@ export default function HomeClient(props: HomeClientProps) {
     try {
       setQuadroDeHorariosData(undefined);
       setSessoesByFilmeData(undefined);
+      setIdCinemaSelected(undefined);
       setIdFilmeSelected(idFilme);
       setLoading(true);
 

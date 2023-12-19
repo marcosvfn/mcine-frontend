@@ -32,7 +32,7 @@ export default function MaisInformacoes(props: maisInformacoesProps) {
           Mais informações
         </Button>
       </SheetTrigger>
-      <SheetContent side="right" className="max-w-screen">
+      <SheetContent side="right" className="max-h-screen">
         <SheetHeader>
           <div className="h-72 w-52 relative overflow-hidden rounded-xl mx-auto">
             <Image alt="posterFilme" src={data.capaUrl} fill />

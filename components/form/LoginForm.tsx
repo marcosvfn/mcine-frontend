@@ -93,9 +93,6 @@ export default function LoginForm() {
           />
         </div>
       </Link>
-      <span className="text-center tracking-tight font-semibold text-md mb-2">
-        Gestão eficiente de cinemas
-      </span>
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
