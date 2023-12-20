@@ -84,8 +84,9 @@ A aplicação está dividida em duas frentes principais: um painel administrativ
     ```
 	
 
-* Inicializar o projeto (porta 3000)
+* Inicializar o projeto (porta 3000) com o projeto backend em execução
 
    ```bash
     $ yarn start
     ```
+   
