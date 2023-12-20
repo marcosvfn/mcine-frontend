@@ -50,6 +50,8 @@ import { format } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import { Calendar } from "@/components/ui/calendar";
 import { Checkbox } from "@/components/ui/checkbox";
+import { AxiosError } from "axios";
+import { HttpResponse } from "@/actions/protocols";
 
 const FormSchema = z.object({
   idCinema: z.string().min(1, "Insira o cinema"),
@@ -117,7 +119,10 @@ export default function SessaoForm(props: SessaoFormProps) {
       router.push(`/${params.idCinema}/sessoes`);
       router.refresh();
     } catch (error) {
-      toast.error("Algo deu errado!");
+      const axiosError = error as AxiosError;
+      const errorData = axiosError.response?.data as HttpResponse;
+
+      toast.error(errorData.message);
     } finally {
       setLoading(false);
     }
