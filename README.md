@@ -4,7 +4,7 @@
 </p>
 
 ## Descrição
-Aplicação frontend para gerenciamento de cinemas em arquitetura multitenancy. Projeto desenvolvido como desafio técnico para uma vaga de desenvolvedor fullstack da empresa Jetimob com prazo de entrega de 15 dias.
+Aplicação frontend para gerenciamento de cinemas em arquitetura multi tenancy. 
 A aplicação está dividida em duas frentes principais: um painel administrativo no qual todo o gerenciamento e gestão dos cinemas são realizados e uma interface para usuários consumidores, onde podem navegar pelos cinemas e sessões, adquirir, listar e excluir tickets;
  
 - Stacks Utilizadas: 
