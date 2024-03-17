@@ -4,7 +4,7 @@
 </p>
 
 ## Descrição
-Aplicação frontend para gerenciamento de cinemas em arquitetura multi tenancy. 
+Aplicação frontend para gerenciamento de cinemas em arquitetura multi tenancy. Projeto realizado como teste técnico para uma vaga de desenvolvedor fullstack, a qual estou operando atualmente.
 A aplicação está dividida em duas frentes principais: um painel administrativo no qual todo o gerenciamento e gestão dos cinemas são realizados e uma interface para usuários consumidores, onde podem navegar pelos cinemas e sessões, adquirir, listar e excluir tickets;
  
 - Stacks Utilizadas: 
