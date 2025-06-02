@@ -3,6 +3,12 @@
   <a href="http://marcosnascimento.vercel.app/" target="blank"><img src="https://res.cloudinary.com/dpmbuqjqj/image/upload/v1702862537/logo.mcine_mjupbm.svg" width="200" alt="mcine Logo" /></a>
 </p>
 
+
+![image](https://github.com/user-attachments/assets/c807726d-3675-4634-b433-2dba9d66dc43)
+![image](https://github.com/user-attachments/assets/bc647f30-c88e-4be7-b28f-8b6caefc36e5)
+![image](https://github.com/user-attachments/assets/e5caa554-340f-49bb-bb87-15059941626e)
+![image](https://github.com/user-attachments/assets/df773e7c-1782-4737-8ecd-d58e92389911)
+
 ## Descrição
 Aplicação frontend para gerenciamento de cinemas em arquitetura multi tenancy. Projeto realizado como teste técnico para uma vaga de desenvolvedor fullstack, a qual estou operando atualmente.
 A aplicação está dividida em duas frentes principais: um painel administrativo no qual todo o gerenciamento e gestão dos cinemas são realizados e uma interface para usuários consumidores, onde podem navegar pelos cinemas e sessões, adquirir, listar e excluir tickets;
